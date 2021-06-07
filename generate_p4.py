@@ -73,7 +73,7 @@ ENTRIES = generate_entries()
 
 if __name__ == '__main__':
     
-    print(p4templatelong.start)
+    print(p4template.start)
     for idx, (point, spread, entry) in enumerate(ENTRIES):
         if spread == 0:
             print('    \t{} : {}({});'.format(entry, ACTION_NAME, idx + 1))
@@ -81,4 +81,4 @@ if __name__ == '__main__':
             word, mask = entry
             iimask = ~mask
             print('    \t{} &&& ~({}w{}) : {}({});'.format(word, MAX_BITS, iimask, ACTION_NAME, idx + 1))
-    print(p4templatelong.end)    
+    print(p4template.end)    
