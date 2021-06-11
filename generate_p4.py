@@ -18,7 +18,7 @@ HMAX = 8
 NDIM = 16
 
 RANDOM_PTS = True
-NPOINTS = 5000
+NPOINTS = 50
 
 
 # Generate random points for benchmark purposes
